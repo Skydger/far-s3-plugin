@@ -1,0 +1,28 @@
+{
+    "name": "far-s3-plugin",
+    "description": "FAR Manager 3 S3 Navigator Plugin",
+    "authors": ["Skydger"],
+    "license": "MIT",
+    "targetType": "dynamicLibrary",
+    "targetName": "far_s3",
+    "sourcePaths": ["src"],
+    "dependencies": {
+        "far3api": "~>3.0.6116"
+    },
+    "libs-windows": ["curl",
+                     "shell32",
+                     "ole32"
+                    ],
+    "dflags-windows-dmd": ["-m64"],
+    "versions": ["s3debug"],
+    "buildTypes": {
+        "debug": {
+            "buildOptions": ["debugMode", "debugInfo"],
+            "versions": ["s3debug"]
+        },
+        "release": {
+            "targetPath": "./bin/rls/",
+            "buildOptions": ["releaseMode", "optimize", "inline"]
+        }
+    }
+}

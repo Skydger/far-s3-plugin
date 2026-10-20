@@ -1,0 +1,16 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/far-s3-plugin
+far-s3-plugin.so
+far-s3-plugin.dylib
+far-s3-plugin.dll
+far-s3-plugin.a
+far-s3-plugin.lib
+far-s3-plugin-test-*
+*.exe
+*.pdb
+*.o
+*.obj
+*.lst
